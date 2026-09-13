@@ -1,0 +1,27 @@
+@"
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Data and generated artifacts
+data/raw/
+data/processed/
+*.parquet
+*.csv
+*.pkl
+*.joblib
+*.faiss
+
+# Local/editor files
+.vscode/
+.idea/
+.DS_Store
+"@ | Set-Content .gitignore
